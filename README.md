@@ -101,3 +101,10 @@ resp, err := dev.CallMethod(createUsers)
 ## Great Thanks
 
 Enhanced and Improved from: [goonvif](https://github.com/yakovlevdmv/goonvif)
+
+## ChangeLog
+
+**2023-12-09**
+
+- upgrade go version to 1.16
+- change time format time.RFC3339Nano to time.RFC3339 in gosoap.NewSecurity()
