@@ -2,6 +2,13 @@
 
 Simple management of onvif IP-devices cameras. onvif is an implementation of  ONVIF protocol for managing onvif IP devices. The purpose of this library is convenient and easy management of IP cameras and other devices that support ONVIF standard.
 
+## ChangeLog
+
+**2023-12-09**
+
+- upgrade go version to 1.16
+- change time format time.RFC3339Nano to time.RFC3339 in gosoap.NewSecurity()
+
 ## Installation
 
 To install the library,  use **go get**:
@@ -101,10 +108,3 @@ resp, err := dev.CallMethod(createUsers)
 ## Great Thanks
 
 Enhanced and Improved from: [goonvif](https://github.com/yakovlevdmv/goonvif)
-
-## ChangeLog
-
-**2023-12-09**
-
-- upgrade go version to 1.16
-- change time format time.RFC3339Nano to time.RFC3339 in gosoap.NewSecurity()
