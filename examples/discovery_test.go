@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"log"
 	"path"
 	"regexp"
@@ -29,7 +29,7 @@ func client() {
 	log.Printf("output %+v", dev.GetServices())
 
 	res, err := dev.CallMethod(device.GetUsers{})
-	bs, _ := ioutil.ReadAll(res.Body)
+	bs, _ := io.ReadAll(res.Body)
 	log.Printf("output %+v %s", res.StatusCode, bs)
 }
 
